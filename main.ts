@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.AB, function () {
     basic.showNumber(input.compassHeading())
-    if (input.compassHeading() < 0 && input.compassHeading() < 45) {
+    if (input.compassHeading() < 0 && input.compassHeading() > 45) {
         music.play(music.stringPlayable("C5 B A G F E D C ", 120), music.PlaybackMode.UntilDone)
     }
     if (input.compassHeading() < 45 && input.compassHeading() > 90) {
